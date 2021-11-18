@@ -37,6 +37,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Fortune | Manage your finance</title>
+        <meta name="description">Manage your finance from one platform with Fortune.</meta>
       </Head>
       <PrimaryMenu menuItems={menuItems} showMenu={showMenu} />
       <HeroSection />
