@@ -18,7 +18,14 @@ const PrimaryMenu = ({ menuItems }) => (
       </div>
     </div>
     <div className={styles.ctaContainer}>
-      <PrimaryButton onClick={null} buttonTxt="Register now" />
+      <PrimaryButton
+        onClick={() =>
+          document
+            .getElementById("register-section")
+            .scrollIntoView({ behavior: "smooth" })
+        }
+        buttonTxt="Register now"
+      />
     </div>
   </menu>
 );
