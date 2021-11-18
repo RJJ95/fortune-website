@@ -9,10 +9,16 @@
   background-color: var(--color-white);
   position: sticky;
   top: 0;
+  transition: 400ms;
+  transform: translateY(-100px);
+}
+
+.showMenu {
+  transform: translateY(0);
 }
 
 .logoContainer {
-  padding: 30px 40px;
+  padding: 20px 40px;
 }
 
 .menuItemsContainer {

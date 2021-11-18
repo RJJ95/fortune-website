@@ -1,5 +1,6 @@
 import styles from "../styles/Home.module.css";
 import PrimaryMenu from "../components/sections/primary-menu";
+import { useState, useEffect } from "react";
 import HeroSection from "../components/sections/hero-section/hero-section";
 import ReferencesSection from "../components/sections/references-section/references-section";
 import ContentSection from "../components/sections/content-section/content-section";
@@ -14,9 +15,26 @@ import {
 } from "../media/content/homepage";
 
 export default function Home() {
+  const [showMenu, setShowMenu] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
+  let lastScrollTop = 0;
+
+  function handleScroll() {
+    const st = window.pageYOffset || document.documentElement.scrollTop;
+    if (st > lastScrollTop) {
+      setShowMenu(false);
+    } else {
+      setShowMenu(true);
+    }
+    lastScrollTop = st;
+  }
   return (
     <div className={styles.container}>
-      <PrimaryMenu menuItems={menuItems} />
+      <PrimaryMenu menuItems={menuItems} showMenu={showMenu} />
       <HeroSection />
       <ReferencesSection />
       <ContentSection content={onlineBankingContent} />

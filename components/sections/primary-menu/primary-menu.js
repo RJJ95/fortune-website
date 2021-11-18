@@ -2,8 +2,11 @@ import styles from "./primary-menu.module.css";
 import Logo from "../../../media/images/logo.svg";
 import PrimaryButton from "../../primitives/primary-button";
 
-const PrimaryMenu = ({ menuItems }) => (
-  <menu className={styles.menu}>
+const PrimaryMenu = ({ menuItems, showMenu }) => (
+  <menu
+    className={showMenu ? `${styles.menu} ${styles.showMenu}` : styles.menu}
+    id="primaryMenu"
+  >
     <div className={styles.navigationContainer}>
       <div className={styles.logoContainer}>
         <Logo />

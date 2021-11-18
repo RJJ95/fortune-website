@@ -5,10 +5,10 @@ const Footer = () => (
   <footer className={styles.wrapper}>
     <div className={styles.copyRightContainer}>
       <Logo />
-      <h3 className={styles.copyRightHeader}>Fortune | All rights reserved.</h3>
+      <p className={styles.copyRightHeader}>Fortune | All rights reserved.</p>
     </div>
     <div>
-      <h3 className={styles.creditsHeader}>By Ricardo de Vries</h3>
+      <p className={styles.creditsHeader}>By Ricardo de Vries</p>
     </div>
   </footer>
 );
