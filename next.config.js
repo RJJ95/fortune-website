@@ -1,4 +1,7 @@
 module.exports = {
+  images: {
+    loader: "cloadinary",
+  },
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
