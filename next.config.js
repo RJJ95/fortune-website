@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    loader: "cloadinary",
+    loader: "cloudinary",
   },
   i18n: {
     locales: ["en"],
