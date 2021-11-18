@@ -3,7 +3,7 @@ import HeroSvg from "../../../media/images/heroSvg.svg";
 import HeroHeader from "../../constructs/hero-header/hero-header";
 
 const HeroSection = () => (
-  <div className={styles.wrapper}>
+  <div id="home" className={styles.wrapper}>
     <div className={styles.heroHeaderContainer}>
       <HeroHeader />
     </div>

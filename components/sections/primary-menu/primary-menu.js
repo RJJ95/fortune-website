@@ -14,9 +14,17 @@ const PrimaryMenu = ({ menuItems, showMenu }) => (
       <div className={styles.verticalLine} />
       <div className={styles.menuItemsContainer}>
         {menuItems.map((menuItem, i) => (
-          <a index={i} href={menuItem.link}>
+          <p
+            key={i}
+            href={menuItem.link}
+            onClick={() =>
+              document
+                .getElementById(menuItem.link)
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
             {menuItem.name}
-          </a>
+          </p>
         ))}
       </div>
     </div>

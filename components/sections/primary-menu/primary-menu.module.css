@@ -23,17 +23,18 @@
 
 .menuItemsContainer {
   width: 100%;
+  display: flex;
 }
 
-.menuItemsContainer a {
+.menuItemsContainer p {
   padding-left: 40px;
   color: var(--color-quick-silver);
   transition: 400ms;
 }
 
-.menuItemsContainer a:hover {
-  padding-left: 40px;
+.menuItemsContainer p:hover {
   color: var(--color-black);
+  cursor: pointer;
 }
 
 .ctaContainer {

@@ -37,9 +37,9 @@ export default function Home() {
       <PrimaryMenu menuItems={menuItems} showMenu={showMenu} />
       <HeroSection />
       <ReferencesSection />
-      <ContentSection content={onlineBankingContent} />
-      <ContentSectionMirrored content={stockContent} />
-      <ContentSection content={cryptoContent} />
+      <ContentSection id="online-banking" content={onlineBankingContent} />
+      <ContentSectionMirrored id="stocks" content={stockContent} />
+      <ContentSection id="crypto" content={cryptoContent} />
       <RegisterSection />
       <Footer />
     </div>

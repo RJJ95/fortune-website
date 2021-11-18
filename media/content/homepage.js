@@ -3,10 +3,10 @@ import Stocks from "../images/stocks.svg";
 import Crypto from "../images/crypto.svg";
 
 export const menuItems = [
-  { name: "Home", link: "#home", active: true },
-  { name: "Online banking", link: "#online-banking", active: false },
-  { name: "Stocks", link: "#stocks", active: false },
-  { name: "Crypto", link: "#crypto", active: false },
+  { name: "Home", link: "home", active: true },
+  { name: "Online banking", link: "online-banking", active: false },
+  { name: "Stocks", link: "stocks", active: false },
+  { name: "Crypto", link: "crypto", active: false },
 ];
 export const onlineBankingContent = {
   headerLabel: "Online banking",
