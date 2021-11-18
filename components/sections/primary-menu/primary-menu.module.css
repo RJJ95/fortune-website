@@ -1,0 +1,36 @@
+.menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-border);
+  border-radius: 0 0 20px 20px;
+}
+
+.logoContainer {
+  padding: 30px 40px;
+}
+
+.menuItemsContainer {
+  width: 100%;
+}
+
+.menuItemsContainer a {
+  padding-left: 40px;
+  color: var(--color-quick-silver);
+}
+
+.ctaContainer {
+  padding-right: 40px;
+}
+
+.verticalLine {
+  border-left: 1px solid black;
+  height: 60px;
+}
+
+.navigationContainer {
+  display: flex;
+  align-items: center;
+}

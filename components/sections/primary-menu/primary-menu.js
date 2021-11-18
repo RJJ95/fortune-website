@@ -1,18 +1,23 @@
-import styles from "./PrimaryMenu.module.css";
-
+import styles from "./primary-menu.module.css";
 import Logo from "../../../media/images/logo.svg";
+import PrimaryButton from "../../primitives/primary-button";
 
 const PrimaryMenu = ({ menuItems }) => (
-  <menu styles={styles.menu}>
-    <div className={styles.logoContainer}>
-      <Logo />
+  <menu className={styles.menu}>
+    <div className={styles.navigationContainer}>
+      <div className={styles.logoContainer}>
+        <Logo />
+      </div>
+      <div className={styles.verticalLine} />
+      <div className={styles.menuItemsContainer}>
+        {menuItems.map((menuItem, i) => (
+          <a href={menuItem.link}>{menuItem.name}</a>
+        ))}
+      </div>
     </div>
-    <div className={styles.menuItemsContainer}>
-      {menuItems.map((menuItem, i) => (
-        <a href={menuItem.link}>{menuItem.name}</a>
-      ))}
+    <div className={styles.ctaContainer}>
+      <PrimaryButton onClick={null} buttonTxt="Register now" />
     </div>
-    <div className={styles.ctaContainer}></div>
   </menu>
 );
 
