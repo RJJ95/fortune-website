@@ -1,6 +1,7 @@
 module.exports = {
   images: {
     loader: "cloudinary",
+    path: "",
   },
   i18n: {
     locales: ["en"],
