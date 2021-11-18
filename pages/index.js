@@ -1,6 +1,7 @@
 import styles from "../styles/Home.module.css";
 import PrimaryMenu from "../components/sections/primary-menu";
 import HeroSection from "../components/sections/hero-section/hero-section";
+import ReferencesSection from "../components/sections/references-section/references-section";
 
 export default function Home() {
   const menuItems = [
@@ -13,6 +14,7 @@ export default function Home() {
     <div className={styles.container}>
       <PrimaryMenu menuItems={menuItems} />
       <HeroSection />
+      <ReferencesSection />
     </div>
   );
 }

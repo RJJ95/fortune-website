@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  padding: 30px 100px;
+  background-color: var(--color-white);
+  justify-content: space-evenly;
+}
+
+.wrapper svg {
+  width: auto;
+  height: 65px;
+  fill: var(--color-silver-medal);
+}
