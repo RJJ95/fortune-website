@@ -3,10 +3,6 @@ module.exports = {
     loader: "cloudinary",
     path: "",
   },
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
-  },
   reactStrictMode: true,
   webpack(config) {
     config.module.rules.push({
