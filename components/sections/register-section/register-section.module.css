@@ -1,0 +1,10 @@
+.wrapper {
+    padding: 150px;
+    text-align: center;
+}
+
+.registerButtonsContainer {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}

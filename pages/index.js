@@ -10,6 +10,7 @@ import {
   stockContent,
   cryptoContent,
 } from "../media/content/homepage";
+import RegisterSection from "../components/sections/register-section/register-section";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <ContentSection content={onlineBankingContent} />
       <ContentSectionMirrored content={stockContent} />
       <ContentSection content={cryptoContent} />
+      <RegisterSection />
     </div>
   );
 }
