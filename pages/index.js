@@ -7,7 +7,7 @@ import ContentSection from "../components/sections/content-section/content-secti
 import ContentSectionMirrored from "../components/sections/content-section-mirrored/content-section-mirrored";
 import RegisterSection from "../components/sections/register-section/register-section";
 import Footer from "../components/sections/footer/footer";
-import Head from 'next/head'
+import Head from "next/head";
 import {
   menuItems,
   onlineBankingContent,
@@ -37,7 +37,10 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Fortune | Manage your finance</title>
-        <meta name="description">Manage your finance from one platform with Fortune.</meta>
+        <meta
+          name="description"
+          content="Manage your finance from one platform with Fortune"
+        />
       </Head>
       <PrimaryMenu menuItems={menuItems} showMenu={showMenu} />
       <HeroSection />
