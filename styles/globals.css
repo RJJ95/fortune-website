@@ -2,18 +2,28 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: DM Sans;
+  background-color: var(--color-white-smoke);
 
   --color-black: #000000;
   --color-white: #ffffff;
   --color-royal-vessel: #4339f2;
-  --color-quick-silver: #9B9B9B;
+  --color-quick-silver: #9b9b9b;
+  --color-white-smoke: #f8f8f8;
   --shadow-border: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
+h1 {
+  font-size: 72px;
+  margin: 0;
+  font-weight: 100;
+}
+
+p {
+  margin: 0;
+}
+
 a {
-  color: inherit;
   text-decoration: none;
 }
 

@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 101px);
+  width: 100%;
+}
+
+.heroHeaderContainer {
+  padding-left: 100px;
+  width: 40%;
+}
+
+.imageContainer {
+  width: 60%;
+}

@@ -11,7 +11,9 @@ const PrimaryMenu = ({ menuItems }) => (
       <div className={styles.verticalLine} />
       <div className={styles.menuItemsContainer}>
         {menuItems.map((menuItem, i) => (
-          <a href={menuItem.link}>{menuItem.name}</a>
+          <a index={i} href={menuItem.link}>
+            {menuItem.name}
+          </a>
         ))}
       </div>
     </div>
