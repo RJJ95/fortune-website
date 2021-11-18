@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 35px;
+  background-color: var(--color-white);
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 20px 20px 0 0;
+}
+
+.copyRightContainer {
+  display: flex;
+  align-items: center;
+}
+
+.creditsHeader {
+  color: var(--color-silver-medal);
+}
+
+.copyRightHeader {
+  padding-left: 25px;
+}
